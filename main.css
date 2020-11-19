@@ -2,34 +2,67 @@
     box-sizing: border-box;
   }
 
+
 body {
-    background-color: gray;
+    background-color: rgb(221, 224, 226);
     margin: 0;
+    font-family: 'Spartan', sans-serif;  
+    background-image: url(geometric-wallpaper.jpg); 
 }
 
 header {
-    padding: 40px 0 0 0;
+    padding: 40px 10% 40px 10%;
+    background-color: rgb(63, 63, 65);
 }
 
 h1 {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
+    color: rgb(245, 246, 248);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    line-height: 1.75;
 }
-.start-screen, fieldset, .question-and-score {
-    width: 80%;
-    margin: 40px auto 0 auto;
-    background-color: white;
+
+p {
+    line-height: 1.75;
+}
+
+.start-screen,  
+.question-and-score,
+fieldset {
+    width: 70%;
+    margin: 40px auto 40px auto;
+    background-color: rgba(245, 241, 241, 0.904);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+}
+
+button {
+    margin-top: 20px;
+    height: auto;
+    font-family: 'Spartan', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(251, 251, 253);
+    background:  rgb(63, 63, 65);
+    border: 2px solid lightgrey; 
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 10px;
     padding: 10px 20px;
 }
 
-form {
-    margin: 5px 0 5px 0;
+
+legend {
+    line-height: 1.75;
 }
 
-label {
-    font-size: 16px;
-    padding-bottom: 10px;
+.options {
+    line-height: 1.75;
 }
 
 ul {
@@ -37,26 +70,51 @@ ul {
     text-align: center;
 }
 
+li {
+    padding: 5px;
+}
+
 .answers {
-    padding: 25px;
+    padding: 25px 0 25px 0;
+}
+
+label {
+  
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .right-answer {
-    background-color: lightgray;
-    border: 2px solid blue;
-    padding: 10px 20px
+    background-color: rgb(168, 236, 168);
+    border: 2px solid rgb(27, 92, 27);
+    padding: 10px 20px;
 }
 
 .wrong-answer {
-    background-color: lightgray;
-    border: 2px solid darkred;
+    background-color: rgb(228, 204, 204);
+    border: 2px solid rgb(150, 45, 45);
     padding: 10px 20px
+}
+
+.question-form button {
+    float:right;
+}
+
+button:hover:enabled,
+button:focus:enabled {
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(108, 111, 112, 0.712);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
 
 .results {
     margin-bottom: 20px;
+    line-height: 1.75;
 }
 
-.row {
-    padding: 10px;
+#next-question-btn {
+    display: none;
 }
+
+

@@ -1,170 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App GreyBox Wireframe</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bartender Basics</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap" rel="stylesheet">    
+  <link href="main.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <header>
-      <h1>Be A Better Bartender</h1>
-    </header>
-    <main>
-        <!--Start Screen-->
-        <div class="start-screen">
-            <p>This quiz will challenge your knowledge of Classic Cocktails and Spirits.</p>
-            <button type="button" id="start">Start Quiz</button>
-        </div>
-        <br>
-        <br>
-        <ul class="question-and-score">
-            <li id="question-number">
-              Question Number: 1/5
-            </li>
-            <li id="score">
-              Score: 0/5
-            </li>
-        </ul>
-       
-        <!--Question and Answer form with Submitt button-->
-        <form>
-            <fieldset>
-                <div class="question">
-                    <legend>Which of the following spirits are distilled from sugar cane?</legend>
-                </div>
-                
-                <div class="answers">
 
-                  <div class="answer-1">
-                    <input type="radio" name="options" value = "Vodka" tabindex="1" required>
-                    <label>Vodka</label>
-                  </div>
-    
-                  <div class="answer-2">
-                    <input type="radio" name="options" value = "Whiskey" tabindex="1" required>
-                    <label>Whiskey</label>
-                  </div>
-    
-                  <div class="answer-3">
-                    <input type="radio" name="options" value = "Tequila" tabindex="1" required>
-                    <label>Tequila</label>
-                  </div>
-    
-                  <div class="anaswer-4">
-                    <input type="radio" name="options" value = "Rum" tabindex="1" required>
-                    <label>Rum</label>
-                  </div>
-    
-                </div>
-    
-              <button type="submit" tabindex="5">Submit</button>
+  <header>
+    <h1>How Good of a Bartender Are You?</h1>
+  </header>
 
-            </fieldset>
-          </form>
-          
-          <!--Correct Answer response with Next Button-->
-          <form>
-            <fieldset>
-                <div class="question">
-                    <legend>Which of the following spirits are distilled from sugar cane?</legend>
-                </div>
-                
-                <div class="answers">
+  <main aria-live="polite"></main>
 
-                  <div class="answer-1">
-                    <input type="radio" name="options" value = "Vodka" tabindex="1" required>
-                    <label>Vodka</label>
-                  </div>
-    
-                  <div class="answer-2">
-                    <input type="radio" name="options" value = "Rum" tabindex="2" required>
-                    <label>Rum</label>
-                    <div class="right-answer">That is correct!</div>
-                  </div>
-    
-                  <div class="answer-3">
-                    <input type="radio" name="options" value = "Tequila" tabindex="3" required>
-                    <label>Tequila</label>
-                  </div>
-    
-                  <div class="anaswer-4">
-                    <input type="radio" name="options" value = "Whiskey" tabindex="4" required>
-                    <label>Whiskey</label>
-                  </div>
-    
-                </div>
-    
-              <button type="button" tabindex="5">Next &gt;</button>
-              
-            </fieldset>
-          </form>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="store.js"></script>
 
-          <!--Wrong Answer response with Next Button-->
-          <form>
-            <fieldset>
-                <div class="question">
-                    <legend>The Moscow Mule is a popular cocktail that consists of which 3 ingredients?</legend>
-                </div>
-                
-                <div class="answers">
+</body>
 
-                  <div class="answer-1">
-                    <input type="radio" name="options" value = "Gin -- lemon juice -- ginger beer" tabindex="1" required>
-                    <label>Gin -- lemon juice -- ginger beer</label>
-                  </div>
-    
-                  <div class="answer-2">
-                    <input type="radio" name="options" value = "Vodka -- lime juice -- ginger beer" tabindex="2" required>
-                    <label>Vodka -- lime juice -- ginger beer</label>
-                  </div>
-    
-                  <div class="answer-3">
-                    <input type="radio" name="options" value = "Rum -- grenadine -- tonic water" tabindex="3" required>
-                    <label>Rum -- grenadine -- tonic water</label>
-                  </div>
-    
-                  <div class="anaswer-4">
-                    <input type="radio" name="options" value = "Scotch -- orange juice -- cherry liquor" tabindex="4" required>
-                    <label>Scotch -- orange juice -- cherry liquor</label>
-                    <div class="wrong-answer">Sorry, your drink got sent back. The correct answer is: Vodka -- lime juice -- ginger beer</div>
-                  </div>
-    
-                </div>
-    
-              <button type="button" tabindex="5">Next &gt;</button>
-              
-            </fieldset>
-          </form>
-         
-
-          <!--Final Results Score Card with 'play again' button -->
-          <div class="results">
-              <form>
-                <fieldset>
-                    <div class="row">
-                        <div class="col-14">
-                            <legend>Your Score is: 4/5</legend>
-                        </div>
-                    </div>  
-
-                    <div class="row">
-                        <div class="col-12">
-                            <button type="button" id="restart"> Play Again </button>
-                        </div>
-                    </div>
-                    
-                </fieldset>
-
-             </form>
-          </div>
-        
-    
-
-
-    </main>
-    
-    
-    <script src="index.js"></script>
-  </body>
 </html>
+
+
+
+
